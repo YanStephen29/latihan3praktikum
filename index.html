@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 Praktikum Pemweb</title>
+    <style>
+        .gambar{
+            text-align: center;
+        }
+
+        .khusus{
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <div></div>
+        <h1>Latihan 3 Artikel</h1>
+            <nav>
+                 <a href="#Home">Home</a>
+                 <a href="#About">About</a>
+                 <a href="#Kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+        <article>
+            <h2>Nirvana Band</h2>
+                <div class="gambar">
+                    <img src="nirvana.jpg" alt="Foto Profil" style="width:500px; height:400px; border-radius:10%;"></br>
+            </div>
+
+               <p style="text-align: justify;"><span class="khusus">Nirvana</span> was an American rock band formed in Aberdeen, Washington, in 1987. Founded by lead singer and guitarist Kurt Cobain and bassist Krist Novoselic, the band went through a succession of drummers, most notably Chad Channing, before recruiting Dave Grohl in 1990. Nirvana's success popularized alternative rock, and they were often referenced as the figurehead band of Generation X. Despite a short mainstream career spanning only three years, their music maintains a popular following and continues to influence modern rock culture.
+
+                In the late 1980s, Nirvana established itself as part of the Seattle grunge scene, releasing its first album, Bleach, for the independent record label Sub Pop in 1989. They developed a sound that relied on dynamic contrasts, often between quiet verses and loud, heavy choruses. After signing to the major label DGC Records in 1991, Nirvana found unexpected mainstream success with "Smells Like Teen Spirit", the first single from their landmark second album Nevermind (1991). A cultural phenomenon of the 1990s, Nevermind was certified Diamond by the Recording Industry Association of America (RIAA) and is credited for ending the dominance of hair metal.[1]
+                
+                Characterized by their punk aesthetic, Nirvana's fusion of pop melodies with noise, combined with their themes of abjection and social alienation, brought them global popularity. Following extensive tours and the 1992 compilation album Incesticide and EP Hormoaning, the band released their highly anticipated third studio album, In Utero (1993). The album topped both the US and UK album charts, and was acclaimed by critics. Nirvana disbanded following Cobain's suicide in April 1994. Further releases have been overseen by Novoselic, Grohl, and Cobain's widow, Courtney Love. The live album MTV Unplugged in New York (1994) won Best Alternative Music Performance at the 1996 Grammy Awards.
+                
+                Nirvana is one of the best-selling bands of all time, having sold more than 75 million records worldwide. During their three years as a mainstream act, Nirvana received an American Music Award, Brit Award, and Grammy Award, as well as seven MTV Video Music Awards and two NME Awards. They achieved five number-one hits on the Billboard Alternative Songs chart and four number-one albums on the Billboard 200. In 2004, Rolling Stone named Nirvana among the 100 greatest artists of all time. They were inducted into the Rock and Roll Hall of Fame in their first year of eligibility in 2014</p>
+
+        </article>
+    </section>
+
+    <aside>
+        <div>
+            <h3>Berita Terkini</h3>
+            <p>Anda dapat mendengarkan lagu-lagu dari band Nirvana di bawah ini!</p>
+            <img src="spotify.png" alt="Spotify" width="20"> Spotify : <a href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh?si=TizwBrBJTZG840LT4DItlA">Nirvana's Spotify</a>
+        </div>
+    </aside>
+
+    <div>
+        <audio autoplay loop>
+            <source src="nirvanasongs.mp3" type="audio/mpeg">Browser Anda Tidak Mendukung Audio.
+        </audio>
+        <br>
+    </div>
+
+    <div>
+        <video controls width="400" height="300" poster="nirvana.jpg"><source src="videocontoh.mp4" type="video/mp4">Browser Anda Tidak Mendukung Video.</video>
+    </div>
+
+    <div>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/0RDXd0_KT60"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <form>
+        <table border="1">
+            <tr>
+                <td><label for="fname">Nama Lengkap:</label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="text" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="jenis_kelamin">Jenis Kelamin:</label></td>
+                <td><input type="radio" name="jenis_kelamin" value="Laki-Laki">Laki Laki<br><input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Prodi:</label></td>
+                <td><select name="prodi" id="prodi">
+                    <option value="ilmukomputer" selected>Ilmu Komputer</option>
+                    <option value="kimia">Kimia</option>
+                    <option value="teknikelektro">Teknik Elektro</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat:</label></td>
+                <td><textarea name="varalamat" rows="3" cols="25" placeholder="Silahkan isi alamat anda"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="sudahbayar">Sudah Bayar?</label></td>
+                <td><input type="checkbox" name="status" value="Sudah" required>Sudah</td>
+            </tr>
+        </table>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+    </form>
+    </div>
+    
+    <footer>
+        <p>&copy;2024. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    
+</body>
+</html>
